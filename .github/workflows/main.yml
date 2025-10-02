@@ -1,0 +1,29 @@
+name: PR Notification
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - closed
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Notify PR author and reviewers
+        uses: peter-evans/slack-send@v1
+        with:
+          slack-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          message: |
+            :bell: *Novo Pull Request ou Atualização* :bell:
+            **Autor:** ${{ github.actor }}
+            **PR:** ${{ github.event.pull_request.title }}
+            **Revisores:** ${{ github.event.pull_request.assignee }}
+            <${{ github.event.pull_request.html_url }}|Clique aqui para ver o PR>
+
