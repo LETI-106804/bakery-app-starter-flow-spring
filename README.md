@@ -1,7 +1,8 @@
-# ⚠️ This starter is not recommended ⚠️
+# Team CGJR
 
-**This starter is not recommended for new Vaadin Flow applications. Instead, visit [start.vaadin.com](https://start.vaadin.com/) to configure and download a Vaadin project that reflects the current best practices.**
+**Curso:** Engenharia de Telecomunicações e Informática
 
+## Membros:
 
 # Running the Project in Development Mode
 
@@ -121,3 +122,9 @@ Pro components used in the starter are :
  - [Vaadin Confirm Dialog](https://vaadin.com/components/vaadin-confirm-dialog)
 
  Also the tests are created using [Testbench](https://vaadin.com/testbench) library.
+| Membro            | Número  |
+|-------------------|---------|
+| João Matos        | 122639  |
+| Rui Andréz        | 122635  |
+| Carlos Correia    | 106804  |
+| Gonçalo Guilherme | 122627  |
